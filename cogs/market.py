@@ -20,7 +20,7 @@ class Market(commands.Cog):
         await ctx.send_help(ctx.command)
 
     # Filter
-    @flags.add_flag("--shiny", action="store_true")
+    @flags.add_flag("--shiny", action="store_false")
     @flags.add_flag("--alolan", action="store_true")
     @flags.add_flag("--galarian", action="store_true")
     @flags.add_flag("--mythical", action="store_true")
